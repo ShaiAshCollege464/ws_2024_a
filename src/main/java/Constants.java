@@ -1,7 +1,7 @@
 public class Constants {
     public static final String PARAM_ID = "id";
     public static final String PARAM_TEST_ID = "testId";
-    public static final String SERVER_DOMAIN = "http://localhost:9030/";
+    public static final String SERVER_DOMAIN = "https://app.seker.live/";
     public static final String SERVER_PATH_PREFIX = "fm1";
     public static final String COLON = ":";
     public static final String PARAM_MAGIC = "magic";
