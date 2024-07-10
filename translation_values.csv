@@ -5,7 +5,7 @@ general_error,שגיאה כללית
 enter_test_id,הכנס את מספר המבחן שלך:
 enter_id,הכנס את מספר תעודת הזהות שלך:
 something_went_wrong,"משהו השתבש, נסה שנית"
-instructions_1_1,הורידו את פרויקט ה-GITHUB שנמצא בקישור הבא: ????? (מודפס גם ב-Colsole של ה-IntelliJ לצורך העתקה נוחה)
+instructions_1_1,הורידו את פרויקט ה-GITHUB שנמצא בקישור הבא: https://github.com/ShaiAshCollege464/ws_2024_a_helper (מודפס גם ב-Colsole של ה-IntelliJ לצורך העתקה נוחה)
 instructions_1_2,בפרויקט ישנו קובץ בשם data.csv.
 instructions_1_3,ניתן לצפות בתוכן הקובץ ב-IntelliJ אבל גם באמצעות התוכנות Notepad או Excel אם זה יותר נוח לכם.
 instructions_1_4, בקובץ יש 20000 שורות. כל שורה מכילה מידע על לקוח שביצע רכישה כלשהי.
