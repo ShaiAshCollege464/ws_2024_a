@@ -39,7 +39,7 @@ question_1,שאלה 1 שלב א'
 question_2,שאלה 2 שלב א'
 move_to_stage_2,עבור לשלב ב',
 instructions_stage_2,הוראות שלב ב'
-instructions_2_1,הורידו את פרויקט ה-GITHUB שנמצא בקישור הבא: ?????
+instructions_2_1,הורידו את פרויקט ה-GITHUB שנמצא בקישור הבא: https://github.com/ShaiAshCollege464/ws_2024_a/blob/main/translation_values.csv
 instructions_2_2,בפרויקט ישנה תיקייה בשם images ובה תמונות רבות שהשם של כל אחת מהן הוא מספר.
 instructions_2_3,כל נבחן יקבל מספר של תמונה (על מנת לראות את המספר שלך - לחץ על הכפתור למטה).
 instructions_2_4,עבור התמונה הזאת עליכם לחשב את הצבע השלישי בדומיננטיות שלו בתמונה מלבד הצבע הלבן.
