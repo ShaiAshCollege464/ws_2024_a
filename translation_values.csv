@@ -59,3 +59,9 @@ instructions_2_17,קוד שגיאה 2004 - לא נשלח הפרמטר magic.
 instructions_2_18,קוד שגיאה 2005 - הפרמטר magic שנשלח אינו תקין.
 instructions_2_19,קוד שגיאה 2010 - התשובה שנשלחה שגויה.
 my_image,התמונה שלי
+helper_project_link,קישור להורדת הפרויקט השני:
+minute_passed,דקה חלפה - הצלחת במשימה
+seconds_passed,שניות חלפו!
+failure_text,התוכנית הסתיימה בטרם עברה דקה - נסה שוב
+instructions_stage_3,הוראות לשלב ג
+state_3_instructions,ההוראות לשלב ג נמצאות בקובץ בשם state3.txt הקיים בתוך הפרויקט

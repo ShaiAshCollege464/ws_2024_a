@@ -1,10 +1,39 @@
+import utils.*;
+
 import javax.swing.*;
 import java.awt.*;
 
 public class MainPanel extends JPanel {
+    private boolean captureNextPaint = true;
+    private boolean stage3 = false;
+
     public MainPanel(int x, int y, int width, int height) {
         this.setBounds(x, y, width, height);
-        this.initScreenComponents();
+        new Thread(this::initScreenComponents).start();
+        new Thread(() -> {
+            while (true) {
+                try {
+                    Thread.sleep(200);
+                    repaint();
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+
+        }).start();
+
+        new Thread(() -> {
+            while (true) {
+                try {
+                    this.captureNextPaint = true;
+                    Thread.sleep(10 * Constants.SECOND);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+
+        }).start();
+
     }
 
     public void initScreenComponents() {
@@ -139,6 +168,42 @@ public class MainPanel extends JPanel {
             }
         });
 
+        JButton stage3 = new JButton(TranslationsUtils.getTranslation(TranslationKeys.instructions_stage_3));
+        stage3.setBounds(
+                Constants.INSTRUCTIONS_BUTTON_STARTING_X, Constants.INSTRUCTIONS_BUTTON_STARTING_Y + Constants.INSTRUCTIONS_BUTTON_HEIGHT * 7,
+                Constants.INSTRUCTIONS_BUTTON_WIDTH, Constants.INSTRUCTIONS_BUTTON_HEIGHT);
+        this.add(stage3);
+        stage3.addActionListener(event -> {
+            try {
+                JOptionPane pane = new JOptionPane(TranslationsUtils.getTranslation(TranslationKeys.state_3_instructions), JOptionPane.INFORMATION_MESSAGE);
+                pane.setComponentOrientation(ComponentOrientation.RIGHT_TO_LEFT);
+                JDialog dialog = pane.createDialog(this, TranslationsUtils.getTranslation(TranslationKeys.state_3_instructions));
+                dialog.setVisible(true);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
+
+
+    }
+
+    @Override
+    protected void paintComponent(Graphics g) {
+        super.paintComponent(g);
+        doNotChange(g);
+        //write your code here, do not change anything else!
+
+    }
+
+    private void doNotChange (Graphics g) {
+        if (this.stage3) {
+            Utils.colorRandomPixel(this, g);
+            if (captureNextPaint) {
+                captureNextPaint = false;
+                Utils.capturePanel(this);
+            }
+
+        }
 
     }
 }
