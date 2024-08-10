@@ -120,26 +120,10 @@ public class MainPanel extends JPanel {
         this.add(moveToStage2);
         moveToStage2.addActionListener(event -> {
             try {
-                String translation = String.format("%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n",
+                System.out.println("https://docs.google.com/document/d/1QkCSDGcZb0OHiyPehaBYB4z8V5r1lX2iH3ZZxxKpJyU/edit?usp=sharing");
+                String translation = String.format("%s\n%s\n",
                         TranslationsUtils.getTranslation(TranslationKeys.instructions_2_1),
-                        TranslationsUtils.getTranslation(TranslationKeys.instructions_2_2),
-                        TranslationsUtils.getTranslation(TranslationKeys.instructions_2_3),
-                        TranslationsUtils.getTranslation(TranslationKeys.instructions_2_4),
-                        TranslationsUtils.getTranslation(TranslationKeys.instructions_2_5),
-                        TranslationsUtils.getTranslation(TranslationKeys.instructions_2_6),
-                        TranslationsUtils.getTranslation(TranslationKeys.instructions_2_7),
-                        TranslationsUtils.getTranslation(TranslationKeys.instructions_2_8),
-                        TranslationsUtils.getTranslation(TranslationKeys.instructions_2_9),
-                        TranslationsUtils.getTranslation(TranslationKeys.instructions_2_10),
-                        TranslationsUtils.getTranslation(TranslationKeys.instructions_2_11),
-                        TranslationsUtils.getTranslation(TranslationKeys.instructions_2_12),
-                        TranslationsUtils.getTranslation(TranslationKeys.instructions_2_13),
-                        TranslationsUtils.getTranslation(TranslationKeys.instructions_2_14),
-                        TranslationsUtils.getTranslation(TranslationKeys.instructions_2_15),
-                        TranslationsUtils.getTranslation(TranslationKeys.instructions_2_16),
-                        TranslationsUtils.getTranslation(TranslationKeys.instructions_2_17),
-                        TranslationsUtils.getTranslation(TranslationKeys.instructions_2_18),
-                        TranslationsUtils.getTranslation(TranslationKeys.instructions_2_19)
+                        TranslationsUtils.getTranslation(TranslationKeys.instructions_2_2)
                 );
                 JOptionPane pane = new JOptionPane(translation, JOptionPane.INFORMATION_MESSAGE);
                 pane.setComponentOrientation(ComponentOrientation.RIGHT_TO_LEFT);

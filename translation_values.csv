@@ -39,8 +39,8 @@ question_1,שאלה 1 שלב א'
 question_2,שאלה 2 שלב א'
 move_to_stage_2,עבור לשלב ב',
 instructions_stage_2,הוראות שלב ב'
-instructions_2_1,הורידו את פרויקט ה-GITHUB שנמצא בקישור הבא: https://github.com/ShaiAshCollege464/ws_2024_a_helper
-instructions_2_2,בפרויקט ישנה תיקייה בשם images ובה תמונות רבות שהשם של כל אחת מהן הוא מספר.
+instructions_2_1,קראו את ההוראות בקישור הבא: https://docs.google.com/document/d/1QkCSDGcZb0OHiyPehaBYB4z8V5r1lX2iH3ZZxxKpJyU/edit?usp=sharing
+instructions_2_2,כתובת הקישור מודפסת גם ב-Colsole של ה-IntelliJ לצורך העתקה נוחה
 instructions_2_3,כל נבחן יקבל מספר של תמונה (על מנת לראות את המספר שלך - לחץ על הכפתור למטה).
 instructions_2_4,עבור התמונה הזאת עליכם לחשב את הצבע השלישי בדומיננטיות שלו בתמונה מלבד הצבע הלבן.
 instructions_2_5,כלומר - לא את הצבע הכי נפוץ ולא את הצבע השני הכי נפוץ - אלא השלישי.
